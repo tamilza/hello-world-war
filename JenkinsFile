@@ -5,10 +5,10 @@ pipeline {
         stage('Git Tagging') {
             steps {
                 script {
-                    def tagName = "v1.0.0" // Set your desired tag name here
+                    def tagName = "v1.3" // Set your desired tag name here
 
-                    sh "git tag ${tagName}" // Creates the Git tag
-                    sh "git push origin ${tagName}" // Pushes the tag to the remote repository
+                    sh "git tag ${v1.3}" // Creates the Git tag
+                    sh "git push origin ${v1.3}" // Pushes the tag to the remote repository
                 }
             }
         }
